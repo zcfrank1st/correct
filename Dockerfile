@@ -6,4 +6,4 @@ RUN ["pip3", "install", "fastapi[all]", "-i", "https://pypi.tuna.tsinghua.edu.cn
 WORKDIR  /opt
 
 COPY ./server.py /opt
-CMD ["uvicorn", "server:app", "--workers", "3"]
+CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--workers", "3"]
