@@ -1,0 +1,1 @@
+curl -d '{"content":"少先队员因该给老人让做"}' -H "Content-Type: application/json" -X POST http://localhost:8000/correct
